@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(120, 120, 120);
+    display: grid;
+    place-content: center;
+    min-width: 100vh;
+    font-family: cursive;
+}
+.drums{
+    width: 150px;
+    height: 70px;
+    background: #fff;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+
+}

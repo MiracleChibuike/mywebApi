@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(120, 120, 120);
+    font-family: cursive;
+    font-size: 2rem;
+    /* display: grid;
+    place-content: center;
+    min-width: 100vh; */
+}
+.allbuttons{
+    display: flex;
+    justify-content: center;
+}
+.drum{
+    width: 180px;
+    height: 70px;
+    font-size: 2rem;
+    margin: 10px;
+}

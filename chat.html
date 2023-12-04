@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item Removal</title>
+</head>
+
+<body>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <!-- Add more items as needed -->
+    </ul>
+
+    <label for="removeItem">Enter item to remove: </label>
+    <input type="text" id="removeItem">
+    <button onclick="removeListItem()">Remove</button>
+
+    <script>
+        function removeListItem() {
+            // Get user input
+            var itemToRemove = document.getElementById("removeItem").value;
+
+            // Get the list
+            var myList = document.getElementById("myList");
+
+            // Get all list items
+            var items = myList.getElementsByTagName("li");
+
+            // Loop through the items
+            for (var i = 0; i < items.length; i++) {
+                // Check if the item's text content matches the user input
+                if (items[i].textContent === itemToRemove) {
+                    // Remove the item
+                    myList.removeChild(items[i]);
+                    // Break the loop (optional, if you want to remove only the first occurrence)
+                    break;
+                }
+            }
+        }
+    </script>
+
+    </body>
+    
+    </html>
